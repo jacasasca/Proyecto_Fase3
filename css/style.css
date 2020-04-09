@@ -21,7 +21,7 @@
 	
 	h3
 	{
-		font-size:150%;
+		font-size:100%;
 		font-weight:bold;
 		line-height:155%;
 		
@@ -71,7 +71,8 @@
 		height:100px;
 		top:0;
 		left:0;
-			
+		z-index:1;
+		position:relative
 	}
 	
 	header #logo img {
@@ -107,12 +108,12 @@
 	
 	nav ul li 
 	{
-		font-size:150%;
+		font-size:100%;
 		display:inline-block;
 		float:left;
-		padding: 10px;	
-		
 	}
+	
+	
 	
 	.current
 	{
@@ -195,3 +196,62 @@
 	{
 		color:#FFF;
 	}
+	
+	
+	
+	
+	
+  #menu, #menu ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+        /* hace referencia a los primeros enlaces */
+        #menu li {
+            float:left;
+            position:relative;
+            width: 10em;
+        }
+        /* hace referencia a los segundos submenus */
+        #menu li ul {
+            position:absolute;
+            display:none;
+			
+        }
+		
+		  /* hace referencia al formato de los enlaces */
+        #menu a {
+            display:block;
+            border-right:1px solid #fff;
+
+            color:#3B3B3B;
+            text-decoration:none;
+            padding:10px;
+        }
+        /* hace referencia al formato 
+           cuando se pasa el raton por encima del enlace */
+        #menu a:hover {
+            background-color:#005883;
+            color:#fff;
+        }
+        /* hace referencia a los bloques de los segundos menus en adelante */
+        #menu ul {
+            border-top:1px solid #fff;
+			color:#FFF;
+			
+        }
+        /* hace referencia al formato
+           del enlaces de los segundos menus en adelante */
+        #menu ul a {
+            border-right:none;
+            border-right:1px solid #fff;
+            border-bottom:1px solid #fff;
+            border-left:1px solid #fff;
+            background:#005883;
+        }
+		
+		     /* muestra los menus de segundo nivel */
+        #menu li:hover ul {
+            display:block;
+        }
+  
