@@ -62,8 +62,11 @@
 	{
 	max-width:1200px;
 	margin:0 auto;
-	padding:0 0 3% 0;	
+	padding:0 0 3% 0;
+	font-size:9px;	
 	}
+	
+	
 	
 	header
 	{
@@ -129,6 +132,14 @@
 		
 	}
 	
+	.twitter-timeline
+	{
+		width: 23%;
+		float:inherit;
+		padding:5px;
+		text-align:center;
+	}
+	
 	.icon-wrap
 	{
 	margin:0 auto;
@@ -144,10 +155,10 @@
 	{
 		text-align:center;
 		color:#FFF;
-		font-size:300%;
-		padding:15%;
-		width:40px;	
-		height:40px;
+		font-size:200%;
+		padding:inherit;
+		width:70px;	
+		height:70px;
 	}
 	
 	
@@ -181,7 +192,7 @@
 	
 	.footer-nav
 	{
-	text-align:right;
+	text-align:center;
 		
 	}
 	
